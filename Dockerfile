@@ -3,7 +3,7 @@ FROM drupal:9.2-apache
 RUN apt-get update && apt-get install -y \
 	curl \
 	git \
-	mysql-client \
+	default-mysql-client \
 	vim \
 	wget
 
