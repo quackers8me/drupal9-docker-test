@@ -1,5 +1,6 @@
-failure-threshold: error
+failure-threshold: warning
 no-fail: 1
 no-color: 1
 ignored: 
     - DL3059
+    - DL3008
