@@ -5,8 +5,9 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
 	git \
 	default-mysql-client \
 	vim \
-	wget \
-	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; \
+	wget
+
+RUN	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; \
 	rm -rf /var/lib/apt/lists/*
 
 RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" && \
